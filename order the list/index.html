@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let strings = []
+    let numbers = []
+    let booleans = []
+
+    let ourarray = ['c',5645,9393.77,"hello",true,false,"good morning",88,-90,777.777,90,665.33,"F"];
+    for(let i = 0; i < ourarray.length; i++){
+        let type = typeof ourarray[i];
+        if (type == "number"){
+            numbers.push(ourarray[i]);
+        };
+        if (type == "string"){
+            strings.push(ourarray[i]);
+        };
+        if (type == "boolean"){
+            booleans.push(ourarray[i]);
+        };
+    }
+    console.log(strings)
+    console.log(numbers)
+    console.log(booleans)
+</script>
+</html>
